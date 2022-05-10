@@ -14,8 +14,6 @@ import DAO.*;
  */
 public class LoginFrm extends javax.swing.JFrame {
     
-    
-    private ManagerHomePanel managerHomePanel = new ManagerHomePanel();
     /**
      * Creates new form LoginFrm
      */
@@ -207,10 +205,9 @@ public class LoginFrm extends javax.swing.JFrame {
             while(rs.next()){
                 UserDAO usDAO = new UserDAO(new User(rs.getString("name"), rs.getString("password")));
                 boolean check = usDAO.checkLogin(user);
-                if(check){
-                    loginPanel.setVisible(!headerPanel.isVisible());
-                    add(managerHomePanel);
-                    managerHomePanel.setVisible(true);
+                if(check && username.equals("manager")){
+                  new ManagerHomeFrm().setVisible(true);
+                  this.dispose();
                     
                     System.out.println("set succes");
                     

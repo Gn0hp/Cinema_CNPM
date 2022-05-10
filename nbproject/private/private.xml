@@ -2,20 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/Ticket.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/cinema/ManagerHomeFrm.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/Film.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/FilmSetOrder.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/Room.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/Bill.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/User.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/cinema/LoginFrm.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/cinema/Cinema.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/FilmSet.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/Client.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/Schedule.java</file>
-            <file>file:/D:/PTIT/CNPM/BTL/Cinema/src/models/Card.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
