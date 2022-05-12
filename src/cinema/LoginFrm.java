@@ -4,6 +4,7 @@
  */
 package cinema;
 
+import database.ConnectDB;
 import java.sql.*;
 import models.*;
 import DAO.*;
@@ -196,7 +197,7 @@ public class LoginFrm extends javax.swing.JFrame {
         String password = passwordEditText.getText();
         User user = new User(username, password);
         System.out.println(password);
-        String query = "Select * from tbluser where name=?" ;
+        String query = "Select * from tblUser where name=?" ;
         PreparedStatement stm = null;
         try{
             stm = conn.prepareStatement(query);

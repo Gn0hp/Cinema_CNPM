@@ -10,15 +10,15 @@ CREATE TABLE `tblBill` (
   `paymentDate` date NOT NULL,
   `paymentType` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `tblCardID` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `tbleUserID` int(10) NOT NULL,
+  `tblUserID` int(10) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tbleUserID`) VALUES ('1', '', '2022-04-27', 'card', '8', 1);
-INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tbleUserID`) VALUES ('2', '', '2022-04-26', 'cash', '4', 1);
-INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tbleUserID`) VALUES ('3', '', '2022-04-27', 'cash', '9', 1);
-INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tbleUserID`) VALUES ('4', '', '2022-04-26', 'card', '3', 1);
-INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tbleUserID`) VALUES ('5', '', '2022-04-26', 'card', '2', 1);
+INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tblUserID`) VALUES ('1', '', '2022-04-27', 'card', '8', 1);
+INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tblUserID`) VALUES ('2', '', '2022-04-26', 'cash', '4', 1);
+INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tblUserID`) VALUES ('3', '', '2022-04-27', 'cash', '9', 1);
+INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tblUserID`) VALUES ('4', '', '2022-04-26', 'card', '3', 1);
+INSERT INTO `tblBill` (`ID`, `discount`, `paymentDate`, `paymentType`, `tblCardID`, `tblUserID`) VALUES ('5', '', '2022-04-26', 'card', '2', 1);
 
 
 #
@@ -56,15 +56,15 @@ CREATE TABLE `tblFilmSetOrder` (
   `orderDate` date NOT NULL,
   `tblFilmSetID` int(10) NOT NULL,
   `tblClientID` int(10) NOT NULL,
-  `tbleUserID` int(10) NOT NULL,
+  `tblUserID` int(10) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tbleUserID`) VALUES (1, 3, '2022-04-24', 2, 1, 1);
-INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tbleUserID`) VALUES (2, 5, '2022-04-26', 3, 3, 1);
-INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tbleUserID`) VALUES (3, 3, '2022-04-26', 4, 5, 1);
-INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tbleUserID`) VALUES (4, 4, '2022-04-26', 3, 5, 1);
-INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tbleUserID`) VALUES (5, 1, '2022-04-26', 5, 1, 1);
+INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tblUserID`) VALUES (1, 3, '2022-04-24', 2, 1, 1);
+INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tblUserID`) VALUES (2, 5, '2022-04-26', 3, 3, 1);
+INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tblUserID`) VALUES (3, 3, '2022-04-26', 4, 5, 1);
+INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tblUserID`) VALUES (4, 4, '2022-04-26', 3, 5, 1);
+INSERT INTO `tblFilmSetOrder` (`ID`, `amountSeat`, `orderDate`, `tblFilmSetID`, `tblClientID`, `tblUserID`) VALUES (5, 1, '2022-04-26', 5, 1, 1);
 
 
 #

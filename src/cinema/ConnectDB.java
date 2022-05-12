@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package cinema;
+package database;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -15,7 +15,7 @@ import java.sql.DriverManager;
  */
 public class ConnectDB {
     private String dbURL = "jdbc:mysql://localhost:3306/cnpm";
-    String username = "root";
+    String username = "gn0hp";
     private String pass = "@Pt103682912";
     public ConnectDB(){}
     public Connection connect(){

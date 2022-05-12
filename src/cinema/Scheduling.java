@@ -4,8 +4,13 @@
  */
 package cinema;
 
+import database.ConnectDB;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 /**
- *
+ *x
  * @author TemporaryUser
  */
 public class Scheduling extends javax.swing.JFrame {

@@ -20,8 +20,13 @@ public class Room {
         this.type = type;
         this.seats = seats;
     }
+    public Room(){}
 
-    public String getName() {
+    public String getID() {
+        return ID;
+    }
+
+    public  String getName() {
         return name;
     }
 

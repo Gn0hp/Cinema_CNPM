@@ -118,14 +118,14 @@ CREATE TABLE `tblFilmSetOrder` (
   `orderDate` date NOT NULL,
   `tblFilmSetID` int(10) NOT NULL,
   `tblClientID` int(10) NOT NULL,
-  `tbleUserID` int(10) NOT NULL,
+  `tblUserID` int(10) NOT NULL,
   PRIMARY KEY (`ID`),
-  KEY `FKtblFilmSet849932` (`tbleUserID`),
+  KEY `FKtblFilmSet849932` (`tblUserID`),
   KEY `FKtblFilmSet443236` (`tblClientID`),
   KEY `FKtblFilmSet358304` (`tblFilmSetID`),
   CONSTRAINT `FKtblFilmSet358304` FOREIGN KEY (`tblFilmSetID`) REFERENCES `tblFilmSet` (`ID`),
   CONSTRAINT `FKtblFilmSet443236` FOREIGN KEY (`tblClientID`) REFERENCES `tblClient` (`ID`),
-  CONSTRAINT `FKtblFilmSet849932` FOREIGN KEY (`tbleUserID`) REFERENCES `tbleUser` (`ID`)
+  CONSTRAINT `FKtblFilmSet849932` FOREIGN KEY (`tblUserID`) REFERENCES `tblUser` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 #
@@ -157,18 +157,18 @@ DROP TABLE IF EXISTS `tblSchedule`;
 
 CREATE TABLE `tblSchedule` (
   `ID` int(10) NOT NULL AUTO_INCREMENT,
-  `tbleUserID` int(10) NOT NULL,
+  `tblUserID` int(10) NOT NULL,
   `time` date NOT NULL,
   PRIMARY KEY (`ID`),
-  KEY `FKtblSchedul887858` (`tbleUserID`),
-  CONSTRAINT `FKtblSchedul887858` FOREIGN KEY (`tbleUserID`) REFERENCES `tbleUser` (`ID`)
+  KEY `FKtblSchedul887858` (`tblUserID`),
+  CONSTRAINT `FKtblSchedul887858` FOREIGN KEY (`tblUserID`) REFERENCES `tblUser` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `tblSchedule` (`ID`, `tbleUserID`, `time`) VALUES (1, 2, '2022-05-07');
-INSERT INTO `tblSchedule` (`ID`, `tbleUserID`, `time`) VALUES (2, 2, '2022-05-05');
-INSERT INTO `tblSchedule` (`ID`, `tbleUserID`, `time`) VALUES (3, 2, '2022-04-29');
-INSERT INTO `tblSchedule` (`ID`, `tbleUserID`, `time`) VALUES (4, 2, '2022-05-01');
-INSERT INTO `tblSchedule` (`ID`, `tbleUserID`, `time`) VALUES (5, 2, '2022-05-08');
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (1, 2, '2022-05-07');
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (2, 2, '2022-05-05');
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (3, 2, '2022-04-29');
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (4, 2, '2022-05-01');
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (5, 2, '2022-05-08');
 
 
 #
