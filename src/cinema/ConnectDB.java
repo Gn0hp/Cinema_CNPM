@@ -15,7 +15,7 @@ import java.sql.DriverManager;
  */
 public class ConnectDB {
     private String dbURL = "jdbc:mysql://localhost:3306/cnpm";
-    String username = "gn0hp";
+    String username = "root";
     private String pass = "@Pt103682912";
     public ConnectDB(){}
     public Connection connect(){

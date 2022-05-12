@@ -36,5 +36,6 @@ public class Schedule {
         this.user = user;
         this.time = time;
     }
+    public Schedule(){}
     
 }

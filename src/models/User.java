@@ -18,6 +18,7 @@ public class User {
         this.name = name;
         this.password = password;
     }
+    public User(){}
 
     public User(String ID, String name, String password, int role) {
         this.ID = ID;

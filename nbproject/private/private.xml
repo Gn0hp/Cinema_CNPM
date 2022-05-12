@@ -2,6 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/cinema/RoomDetailFrm.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/cinema/FilmFrm.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/DAO/UserDAO.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/models/User.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/models/Schedule.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/cinema/ConnectDB.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/cinema/RoomFrm.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/DAO/FilmDAO.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/models/Film.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/DAO/ScheduleDAO.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/DAO/RoomDAO.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/models/FilmSet.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/DAO/FilmSetDAO.java</file>
+            <file>file:/D:/PTIT/CNPM/BTL/Cinema_BTL_CNPM/src/cinema/ConfirmFrm.java</file>
+        </group>
     </open-files>
 </project-private>

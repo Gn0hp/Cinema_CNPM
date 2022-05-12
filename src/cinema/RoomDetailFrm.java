@@ -4,6 +4,7 @@
  */
 package cinema;
 import DAO.RoomDAO;
+import DAO.FilmSetDAO;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 import models.Room;
@@ -67,6 +68,11 @@ public class RoomDetailFrm extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setText("Film");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
 
         jButton2.setText("Set");
 
@@ -191,29 +197,37 @@ public class RoomDetailFrm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-    String[] columnNames = {"TT", "Time", "Film", "Full"};
+    String[] columnNames = {"ID", "Time", "Film", "Full"};
         DefaultTableModel model = new DefaultTableModel(columnNames,0);
-        FilmSet fs =  
-        for(Room i : roomData){
+        ArrayList<FilmSet> fs = FilmSetDAO.getFilmSetByRoom(this.room.getID());
+        for(FilmSet i : fs){
             model.addRow(new Object[]{
-            i.getID(), i.getName(), i.getSeats(), "0"
+            i.getID(), i.getStartTime(),i.getFilm().getName(), "0"
             });
         }
         jTable1.setModel(model);
-        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
-        @Override
-    public void mouseClicked(java.awt.event.MouseEvent evt) {
-        int row = jTable1.rowAtPoint(evt.getPoint());
-        int col = jTable1.columnAtPoint(evt.getPoint());
-        if (row >= 0 && col >= 0) {
-          Room room = RoomDAO.getRoomByID(jTable1.getModel().getValueAt(row, 0).toString());
-            dispose();
-            new RoomDetailFrm(room).setVisible(true);
-
-        }
-    }
-});        // TODO add your handling code here:
+        
+        // Click on single row
+//        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+//        @Override
+//    public void mouseClicked(java.awt.event.MouseEvent evt) {
+//        int row = jTable1.rowAtPoint(evt.getPoint());
+//        int col = jTable1.columnAtPoint(evt.getPoint());
+//        if (row >= 0 && col >= 0) {
+//          Room room = RoomDAO.getRoomByID(jTable1.getModel().getValueAt(row, 0).toString());
+//            dispose();
+//            new RoomDetailFrm(room).setVisible(true);
+//
+//        }
+//    }
+//});        // TODO add your handling code here:
     }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+        new FilmFrm(this.room).setVisible(true);
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments

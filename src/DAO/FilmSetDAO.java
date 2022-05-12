@@ -21,7 +21,7 @@ public class FilmSetDAO {
     public FilmSetDAO(FilmSet u){
         this.filmSet = u;
     }
-    public ArrayList<FilmSet> getFilmSetByRoom(String roomId){
+    public static ArrayList<FilmSet> getFilmSetByRoom(String roomId){
         ArrayList<FilmSet> res = new ArrayList<>();
         ConnectDB connectDB = new ConnectDB();
         Connection conn = connectDB.connect();
@@ -33,7 +33,7 @@ public class FilmSetDAO {
             ResultSet rs = stm.executeQuery();
             while(rs.next()){
                res.add(new FilmSet(rs.getString("ID"), rs.getInt("cost"), rs.getString("startTime"), DAO.RoomDAO.getRoomByID(rs.getString("tbRoomID")),
-                       DAO.FilmDAO.getFilmByID(rs.getString("tblFilmID")), DAO.ScheduleDAO.getScheduleByID(rs.getString("tblScheduleID"))
+                       FilmDAO.getFilmByID(rs.getString("tblFilmID")), ScheduleDAO.getScheduleByID(rs.getString("tblScheduleID"))
                ));
             }
             conn.close();
