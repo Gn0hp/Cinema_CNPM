@@ -25,7 +25,7 @@ public class UserDAO {
         User res = new User();
         ConnectDB connectDB = new ConnectDB();
         Connection conn = connectDB.connect();
-        String query = "Select * from tbluser where id=?";
+        String query = "Select * from tblUser where id=?";
         PreparedStatement stm = null;
          try{
             stm = conn.prepareStatement(query);
@@ -42,3 +42,4 @@ public class UserDAO {
          return res;
     }
 }
+

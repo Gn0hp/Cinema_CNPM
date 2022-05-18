@@ -26,7 +26,7 @@ public class FilmDAO {
         Film res = new Film();
         ConnectDB connectDB = new ConnectDB();
         Connection conn = connectDB.connect();
-        String query = "Select * from tblfilm where id=?";
+        String query = "Select * from tblFilm where id=?";
         PreparedStatement stm = null;
          try{
             stm = conn.prepareStatement(query);
@@ -46,7 +46,7 @@ public class FilmDAO {
         ArrayList<Film> arrFilm = new ArrayList<>();
         ConnectDB connectDB = new ConnectDB();
         Connection conn = connectDB.connect();
-        String query = "Select * from tblfilm" ;
+        String query = "Select * from tblFilm" ;
         try{
             Statement stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(query);

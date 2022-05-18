@@ -14,17 +14,34 @@ public class FilmSet {
     private String startTime;
     private Room room;
     private Film film;
-    private Schedule schedule;
-
-    public FilmSet(String ID, int cost, String startTime, Room room, Film film, Schedule schedule) {
+    private User user;
+    
+    public FilmSet(){}
+    public FilmSet(String ID, int cost, String startTime, Room room, Film film) {
         this.ID = ID;
         this.cost = cost;
         this.startTime = startTime;
         this.room = room;
         this.film = film;
-        this.schedule = schedule;
     }
 
+    public FilmSet(String ID, int cost, String startTime, Room room, Film film, User user) {
+        this.ID = ID;
+        this.cost = cost;
+        this.startTime = startTime;
+        this.room = room;
+        this.film = film;
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+    
     public String getID() {
         return ID;
     }
@@ -65,13 +82,6 @@ public class FilmSet {
         this.film = film;
     }
 
-    public Schedule getSchedule() {
-        return schedule;
-    }
-
-    public void setSchedule(Schedule schedule) {
-        this.schedule = schedule;
-    }
     
     
     

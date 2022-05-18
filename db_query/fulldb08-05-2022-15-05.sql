@@ -159,16 +159,17 @@ CREATE TABLE `tblSchedule` (
   `ID` int(10) NOT NULL AUTO_INCREMENT,
   `tblUserID` int(10) NOT NULL,
   `time` date NOT NULL,
+  `tblFilmSetID` int(10) Not null,
   PRIMARY KEY (`ID`),
   KEY `FKtblSchedul887858` (`tblUserID`),
   CONSTRAINT `FKtblSchedul887858` FOREIGN KEY (`tblUserID`) REFERENCES `tblUser` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (1, 2, '2022-05-07');
-INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (2, 2, '2022-05-05');
-INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (3, 2, '2022-04-29');
-INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (4, 2, '2022-05-01');
-INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`) VALUES (5, 2, '2022-05-08');
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`, `tblFilmSetID`) VALUES (1, 2, '2022-05-07',2);
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`,`tblFilmSetID`) VALUES (2, 2, '2022-05-05',3);
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`, `tblFilmSetID`) VALUES (3, 2, '2022-04-29',1);
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`, `tblFilmSetID`) VALUES (4, 2, '2022-05-01',5);
+INSERT INTO `tblSchedule` (`ID`, `tblUserID`, `time`, `tblFilmSetID`) VALUES (5, 2, '2022-05-08',4);
 
 
 #
